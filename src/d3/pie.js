@@ -2,7 +2,7 @@ import * as d3 from 'd3';
 import _ from 'lodash';
 
 // CREDIT/THANKS: https://link.medium.com/N0Qr8tiSwX
-class PieElement {
+class PieChart {
   ref;
   props;
   constructor(ref, props) {
@@ -66,4 +66,4 @@ class PieElement {
   };
 }
 
-export default PieElement;
+export default PieChart;

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Container, Segment } from 'semantic-ui-react';
 
 import Pie from './Pie';
-import genData from './data';
+import genData from '../data';
 
 function App() {
   // state
