@@ -13,17 +13,19 @@ const data = {
       })
       .value();
   },
-  cal() {
-    return _.chain(365)
-    .range()
-    .map((v, k) => {
-      return {
-        date: moment().subtract(k, 'days').format('YYYY-MM-DD'),
-        value: _.random(10),
-      };
-    })
-    .value();
-  }
+  cal(r = 1000) {
+    return _.chain(r)
+      .range()
+      .map((v, k) => {
+        return {
+          date: moment()
+            .subtract(k, 'days')
+            .format('YYYY-MM-DD'),
+          value: _.random(10),
+        };
+      })
+      .value();
+  },
 };
 
 export default data;
